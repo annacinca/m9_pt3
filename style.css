@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0 auto;
 }
 
@@ -20,14 +20,14 @@ body{
     }
 }
 
-.compra_tu p{
+.compra_tu p {
     color: #ffffff;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.compra_tu a{
+.compra_tu a {
     color: #ffffff;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,20 +36,23 @@ body{
 
 .navigation {
     width: 100%;
-    height: 132px;
+    max-width: 1200px;
+    /* Establece un ancho máximo para evitar que crezca demasiado en pantallas grandes */
+    height: auto;
     flex-shrink: 0;
     background: #FFF;
-    /*background-color: grey;*/
     display: flex;
-    justify-content: baseline; 
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* Centra el contenido en pantallas más grandes */
 }
 
 .navigation .menu_nav {
     display: flex;
     text-align: left;
-    width: 500px;
-    margin-left: 100px;
 }
 
 .navigation .menu_nav div {
@@ -58,15 +61,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     word-wrap: break-word;
-    padding: 10px; 
+    padding: 10px;
     margin: 0 5px;
 }
 
 .navigation img {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    margin-left: 19.50em;
     width: 102px;
 }
 
@@ -81,9 +80,67 @@ body{
     width: 150px;
     height: 50px;
     line-height: 50px;
-    margin-left: 40em;
-    font-weight: bold;
 }
 
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .navigation .menu_nav {
+        margin: 10px 0;
+    }
 
+    .navigation .btn {
+        margin-top: 10px;
+    }
+}
+
+/*.video-container {
+    position: relative;
+    width: 640px;
+    height: 560px;
+    }
+    
+    .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }*/
+.imgPortada {
+    background: url('img/pacha-barcelona.jpg') no-repeat 50% / cover, lightgray;
+    width: 100%;
+    height: 50vh;
+    /* Usando unidades relativas al viewport height */
+    flex-shrink: 0;
+}
+
+.sub-page {
+    background: #FFF;
+    width: 100%;
+    height: 30vh;
+    /* Ajusta según sea necesario */
+    flex-shrink: 0;
+}
+
+.imgS1 {
+    width: 750px;
+    height: 440px;
+    flex-shrink: 0;
+}
+
+.textS1 {
+    font-size: 48px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    width: 686px;
+    height: 72px;
+
+}
