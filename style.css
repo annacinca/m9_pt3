@@ -35,13 +35,13 @@ body {
 
 .navigation {
     width: 100%;
-    max-width: 1200px;
+    /*max-width: 1600px;*/
     /* Establece un ancho máximo para evitar que crezca demasiado en pantallas grandes */
     height: auto;
     flex-shrink: 0;
     background: #FFF;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
@@ -52,6 +52,7 @@ body {
 .navigation .menu_nav {
     display: flex;
     text-align: left;
+    margin-left: 50px;
 }
 
 .navigation .menu_nav div {
@@ -66,6 +67,7 @@ body {
 
 .navigation img {
     width: 102px;
+    margin-right: 18em;
 }
 
 .navigation .btn {
@@ -79,6 +81,7 @@ body {
     width: 150px;
     height: 50px;
     line-height: 50px;
+    margin-right: 50px;
 }
 
 /* Media query para pantallas más pequeñas */
@@ -115,7 +118,7 @@ body {
 .imgPortada {
     background: url('img/pacha-barcelona.jpg') no-repeat 50% / cover, lightgray;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     /* Usando unidades relativas al viewport height */
     flex-shrink: 0;
 }
@@ -126,6 +129,14 @@ body {
     height: 30vh;
     /* Ajusta según sea necesario */
     flex-shrink: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.sub-page .tab1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgS1 {
@@ -141,5 +152,88 @@ body {
     color: rgba(0, 0, 0, 1);
     width: 686px;
     height: 72px;
+    text-align: center;
+}
+.textS2 {
+    font-size: 25px;
+    font-family: "Montserrat";
+    color: rgba(0, 0, 0, 1);
+    width: 686px;
+    height: 72px;
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .sub-page .tab1{flex-direction: column;
+        align-items: center;}
+
+
+    .sub-page .tab1 .imgS1{
+        width: 375px;
+        height: 220px;
+    }
+
+    .sub-page .tab1 .textS1{
+        font-size: 25px;
+    }
+
+}
+
+.sub-page2 {
+    background: #fff;
+    width: 100%;
+    height: 30vh;
+    /* Ajusta según sea necesario */
+    flex-shrink: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.sub-page2 .tab2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgS2 {
+    width: 750px;
+    height: 440px;
+    flex-shrink: 0;
+}
+
+.textS3 {
+    font-size: 48px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    width: 686px;
+    height: 72px;
+    text-align: center;
+}
+.textS4 {
+    font-size: 25px;
+    font-family: "Montserrat";
+    color: rgba(0, 0, 0, 1);
+    width: 686px;
+    height: 72px;
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .sub-page2 .tab2{flex-direction: column;
+        align-items: center;
+    }
+
+
+    .sub-page2 .tab2 .imgS2{
+        width: 375px;
+        height: 220px;
+    }
+
+    .sub-page2 .tab2 .textS3{
+        font-size: 25px;
+    }
 
 }
