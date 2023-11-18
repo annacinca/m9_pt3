@@ -84,20 +84,16 @@ body {
     margin-right: 50px;
 }
 
-/* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
     .navigation {
         flex-direction: column;
         align-items: center;
     }
 
-    .navigation .menu_nav {
+    .navigation .menu_nav,.navigation .btn,.navigation img {
         margin: 10px 0;
     }
 
-    .navigation .btn {
-        margin-top: 10px;
-    }
 }
 
 /*.video-container {
@@ -118,31 +114,34 @@ body {
 .imgPortada {
     background: url('img/pacha-barcelona.jpg') no-repeat 50% / cover, lightgray;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     /* Usando unidades relativas al viewport height */
     flex-shrink: 0;
 }
 
 .sub-page {
-    background: #FFF;
+    display: flex; /* Set display to flex */ 
+    background: #fff;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     /* Ajusta según sea necesario */
     flex-shrink: 0;
-    display: block;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
-}
-.sub-page .tab1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
-.imgS1 {
+.sub-page .imgS1 {
     width: 750px;
     height: 440px;
     flex-shrink: 0;
+}
+
+.text-container {
+    display: block;
+    width: 50%; /* Ajusta el ancho del contenedor de texto */
+    padding: 20px; /* Agrega algo de relleno para un mejor espaciado */
+    text-align: left;
 }
 
 .textS1 {
@@ -153,53 +152,82 @@ body {
     width: 686px;
     height: 72px;
     text-align: center;
+    padding-left: 50px;
+    margin-bottom: 20px;
 }
+
 .textS2 {
     font-size: 25px;
     font-family: "Montserrat";
     color: rgba(0, 0, 0, 1);
     width: 686px;
     height: 72px;
+    padding-left: 50px;
     text-align: center;
-
 }
 
-@media (max-width: 768px) {
-    .sub-page .tab1{flex-direction: column;
-        align-items: center;}
+    @media (max-width: 768px) {
+        .imgPortada {
+            height: 30vh; /* Adjust height for smaller screens if needed */
+        }
+    
+        .sub-page {
+            flex-direction: column;
+            height: auto;
+            align-items: center; /* Allow the height to adjust based on content */
+        }
+    
+        .sub-page .imgS1 {
+            width: 60%; /* Set width to 100% for responsiveness */
+            height: 20vh; /* Allow the height to adjust based on content */
+            justify-content: center;
+        }
 
+        .text-container{
+            justify-content: center;
+            text-align: center;
+            width: 70%;
+            padding-left: 0px;
+            margin-left: -30px;
+        }
 
-    .sub-page .tab1 .imgS1{
-        width: 375px;
-        height: 220px;
-    }
-
-    .sub-page .tab1 .textS1{
-        font-size: 25px;
-    }
-
+        .textS1 {
+            font-size: 25px; width: 86%;
+        }
+    
+        .textS2 {
+            margin-top: -20px;
+            font-size: 18px; width: 86%;
+        }
 }
+
+
 
 .sub-page2 {
+    display: flex; /* Set display to flex */ 
     background: #fff;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     /* Ajusta según sea necesario */
     flex-shrink: 0;
-    display: block;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
-}
-.sub-page2 .tab2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row-reverse;
+    
 }
 
-.imgS2 {
+.sub-page2 .imgS2 {
     width: 750px;
     height: 440px;
     flex-shrink: 0;
+}
+
+.text-container2 {
+    display: block;
+    width: 50%; /* Ajusta el ancho del contenedor de texto */
+    padding-right: 100px;
+    margin-left: -50px;
+    text-align: -webkit-right;
 }
 
 .textS3 {
@@ -210,30 +238,48 @@ body {
     width: 686px;
     height: 72px;
     text-align: center;
+    padding-left: 50px;
+    margin-bottom: 20px;
 }
+
 .textS4 {
     font-size: 25px;
     font-family: "Montserrat";
     color: rgba(0, 0, 0, 1);
     width: 686px;
     height: 72px;
+    padding-left: 50px;
     text-align: center;
-
 }
 
-@media (max-width: 768px) {
-    .sub-page2 .tab2{flex-direction: column;
-        align-items: center;
-    }
+    @media (max-width: 768px) {
+        .sub-page2 {
+            flex-direction: column;
+            height: auto;
+            align-items: center; /* Allow the height to adjust based on content */
+        }
+    
+        .sub-page2 .imgS2 {
+            width: 60%; /* Set width to 100% for responsiveness */
+            height: 20vh; /* Allow the height to adjust based on content */
+            justify-content: center;
+        }
 
+        .text-container2{
+            justify-content: center;
+            text-align: center;
+            width: 70%;
+            padding-left: 0px;
+            margin-left: 50px;
+        }
 
-    .sub-page2 .tab2 .imgS2{
-        width: 375px;
-        height: 220px;
-    }
-
-    .sub-page2 .tab2 .textS3{
-        font-size: 25px;
-    }
-
+        .textS3 {
+            font-size: 25px; width: 86%;
+        }
+    
+        .textS4 {
+            margin-top: -20px;
+            font-size: 18px; width: 86%;
+        }
 }
+
