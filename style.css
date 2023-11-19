@@ -35,8 +35,6 @@ body {
 
 .navigation {
     width: 100%;
-    /*max-width: 1600px;*/
-    /* Establece un ancho máximo para evitar que crezca demasiado en pantallas grandes */
     height: auto;
     flex-shrink: 0;
     background: #FFF;
@@ -46,7 +44,6 @@ body {
     padding: 10px;
     box-sizing: border-box;
     margin: 0 auto;
-    /* Centra el contenido en pantallas más grandes */
 }
 
 .navigation .menu_nav {
@@ -117,17 +114,14 @@ body {
     background: url('img/pacha-barcelona.jpg') no-repeat 50% / cover, lightgray;
     width: 100%;
     height: 50vh;
-    /* Usando unidades relativas al viewport height */
     flex-shrink: 0;
 }
 
 .sub-page {
     display: flex;
-    /* Set display to flex */
     background: #fff;
     width: 100%;
     height: 50vh;
-    /* Ajusta según sea necesario */
     flex-shrink: 0;
     justify-content: flex-end;
     align-items: center;
@@ -143,9 +137,7 @@ body {
 .text-container {
     display: block;
     width: 50%;
-    /* Ajusta el ancho del contenedor de texto */
     padding: 20px;
-    /* Agrega algo de relleno para un mejor espaciado */
     text-align: left;
 }
 
@@ -174,21 +166,17 @@ body {
 @media (max-width: 768px) {
     .imgPortada {
         height: 30vh;
-        /* Adjust height for smaller screens if needed */
     }
 
     .sub-page {
         flex-direction: column;
         height: auto;
         align-items: center;
-        /* Allow the height to adjust based on content */
     }
 
     .sub-page .imgS1 {
         width: 60%;
-        /* Set width to 100% for responsiveness */
         height: 20vh;
-        /* Allow the height to adjust based on content */
         justify-content: center;
     }
 
@@ -216,11 +204,9 @@ body {
 
 .sub-page2 {
     display: flex;
-    /* Set display to flex */
     background: #fff;
     width: 100%;
     height: 50vh;
-    /* Ajusta según sea necesario */
     flex-shrink: 0;
     justify-content: flex-end;
     align-items: center;
@@ -237,7 +223,6 @@ body {
 .text-container2 {
     display: block;
     width: 50%;
-    /* Ajusta el ancho del contenedor de texto */
     padding-right: 100px;
     margin-left: -50px;
     text-align: -webkit-right;
@@ -270,14 +255,11 @@ body {
         flex-direction: column;
         height: auto;
         align-items: center;
-        /* Allow the height to adjust based on content */
     }
 
     .sub-page2 .imgS2 {
         width: 60%;
-        /* Set width to 100% for responsiveness */
         height: 20vh;
-        /* Allow the height to adjust based on content */
         justify-content: center;
     }
 
@@ -300,6 +282,7 @@ body {
         width: 86%;
     }
 }
+
 .navigation-b {
     width: 100%;
     height: 233px;
@@ -341,7 +324,7 @@ body {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.225px;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .input-email input::placeholder {
@@ -372,7 +355,6 @@ body {
     margin: 0;
 }
 
-/* Estilos para pantallas más pequeñas */
 @media only screen and (max-width: 768px) {
     .navigation-b {
         flex-direction: column;
@@ -384,7 +366,7 @@ body {
     }
 
     .input-email {
-        align-items: center; /* Centra los elementos del contenedor flex */
+        align-items: center;
     }
 
     .input-email input {
@@ -395,4 +377,128 @@ body {
     .navigation-b {
         height: auto;
     }
+}
+
+.signup-a {
+    width: 100%;
+    min-height: 100vh;
+    /* Mínimo 100% de la altura de la ventana */
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.signup-title {
+    width: 100%;
+    /* Cambiado a 100% para ser responsive */
+    max-width: 1392px;
+    /* Establecemos un máximo para evitar que el texto sea demasiado ancho en pantallas grandes */
+    height: 72px;
+    color: #C21F3D;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.72px;
+    margin-bottom: 10px;
+}
+
+.signup-text {
+    width: 100%;
+    /* Cambiado a 100% para ser responsive */
+    max-width: 1392px;
+    /* Establecemos un máximo para evitar que el texto sea demasiado ancho en pantallas grandes */
+    height: 209px;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -0.54px;
+    margin-top: 0px;
+
+}
+
+@media (max-width: 600px) {
+
+    /* Estilos específicos para pantallas más pequeñas */
+    .signup-title {
+        font-size: 36px;
+        /* Reducimos el tamaño del título para pantallas pequeñas */
+        line-height: 48px;
+    }
+
+    .signup-text {
+        font-size: 24px;
+        /* Reducimos el tamaño del texto para pantallas pequeñas */
+        line-height: 36px;
+    }
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: flex-start;
+}
+
+.label {
+    width: calc(100% - 40px);
+    height: 45px;
+    color: rgba(0, 0, 0, 0.80);
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: -0.54px;
+    margin-left: 20px;
+}
+
+.input,
+.textarea {
+    width: calc(100% - 40px);
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
+    margin-bottom: 20px;
+    padding: 0px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.button {
+    width: 100px;
+    height: 45px;
+    padding: 10px;
+    border: 2px solid #C21F3D;
+    background: #FFF;
+    color: #C21F3D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20px; /* Margin-left is already set to 20px */
+}
+
+.button-text {
+    font-size: 16px;
 }
