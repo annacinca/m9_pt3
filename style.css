@@ -226,6 +226,7 @@ body {
     padding-right: 100px;
     margin-left: -50px;
     text-align: -webkit-right;
+    text-align: -moz-right;
 }
 
 .textS3 {
@@ -291,6 +292,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .navigation-b p {
@@ -505,5 +507,73 @@ form {
 }
 
 @media only screen and (max-width: 768px) {
-    form{margin-top: -50px;}
+    form{margin-top: 50px;}
+
+    .signup-text{
+        font-size: 22px;
+    }
+
 }
+
+.footer {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.footer .menu_footer {
+    display: flex;
+    text-align: left;
+    margin-left: 300px;
+}
+
+.footer .menu_footer div {
+    color: #C21F3D;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.footer img {
+    width: 102px;
+}
+
+.footer .menu_footer2 {
+    display: flex;
+    text-align: right;
+    margin-right: 300px;
+}
+
+.footer .menu_footer2 div {
+    color: #C21F3D;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+hr{width: 85%; height: 1px; background-color: #C21F3D;}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    
+}
+.copyright{
+    font-family: Montserrat;
+}
+
