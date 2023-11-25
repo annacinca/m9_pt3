@@ -17,6 +17,11 @@ body {
         flex-direction: column;
         height: auto;
     }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .compra_tu p {
@@ -87,6 +92,10 @@ body {
         align-items: center;
     }
 
+    .navigation .menu_nav div {
+        font-size: 13px
+            }
+
     .navigation .menu_nav,
     .navigation .btn,
     .navigation img {
@@ -95,21 +104,24 @@ body {
 
 }
 
-/*.video-container {
-    position: relative;
-    width: 640px;
-    height: 560px;
+@media (max-width: 480px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 400px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }*/
+
+    .navigation .menu_nav div {
+        font-size: 10px;
+            }
+
+    .navigation .menu_nav,
+    .navigation .btn,
+    .navigation img {
+        margin: 10px 0;
+    }
+
+}
+
 .imgPortada {
     background: url('img/pacha-barcelona.jpg') no-repeat 50% / cover, lightgray;
     width: 100%;
@@ -203,6 +215,46 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .imgPortada {
+        height: 30vh;
+    }
+
+    .sub-page {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .sub-page .imgS1 {
+        width: 60%;
+        height: 20vh;
+        justify-content: center;
+    }
+
+    .text-container {
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+        padding-left: 0px;
+        margin-left: -30px;
+        margin-left: -30px;
+    margin-bottom: 30px;
+    }
+
+    .textS1 {
+        font-size: 25px;
+        width: 86%;
+    }
+
+    .textS2 {
+        margin-top: -20px;
+        font-size: 18px;
+        width: 86%;
+        margin-bottom: 80px;
+    }
+}
+
 
 
 .sub-page2 {
@@ -255,6 +307,39 @@ body {
 }
 
 @media (max-width: 768px) {
+    .sub-page2 {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .sub-page2 .imgS2 {
+        width: 60%;
+        height: 20vh;
+        justify-content: center;
+    }
+
+    .text-container2 {
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+        padding-left: 0px;
+        margin-left: 50px;
+    }
+
+    .textS3 {
+        font-size: 25px;
+        width: 86%;
+    }
+
+    .textS4 {
+        margin-top: -20px;
+        font-size: 18px;
+        width: 86%;
+    }
+}
+
+@media (max-width: 480px) {
     .sub-page2 {
         flex-direction: column;
         height: auto;
@@ -385,6 +470,43 @@ body {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .navigation-b {
+        text-align: center;
+    }
+
+    .navigation-b p {
+        margin: 20px 0;
+        display: none;
+    }
+
+    .input-email {
+        align-items: center;
+    }
+
+    .input-email input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 11px 0px;
+    }
+
+    .navigation-b {
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .button-subs {
+        width: 35%;
+        height: 40%;
+        margin-right: 10px;
+    }
+
+    .input-email input {
+        height: 30px;
+        margin-left: 20px;
+    }
+}
+
 .signup-a {
     width: 100%;
     min-height: 100vh;
@@ -434,6 +556,22 @@ body {
 }
 
 @media (max-width: 786px) {
+
+    /* Estilos específicos para pantallas más pequeñas */
+    .signup-title {
+        font-size: 36px;
+        /* Reducimos el tamaño del título para pantallas pequeñas */
+        line-height: 48px;
+    }
+
+    .signup-text {
+        font-size: 24px;
+        /* Reducimos el tamaño del texto para pantallas pequeñas */
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 480px) {
 
     /* Estilos específicos para pantallas más pequeñas */
     .signup-title {
@@ -518,6 +656,15 @@ form {
 
 }
 
+@media only screen and (max-width: 480px) {
+    form{margin-top: 50px;}
+
+    .signup-text{
+        font-size: 16px;
+    }
+
+}
+
 .footer {
     width: 100%;
     height: auto;
@@ -581,6 +728,21 @@ hr{width: 85%; height: 1px; background-color: #C21F3D;}
 }
 
 @media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .menu_footer{display: none;}
+
+    .footer .menu_footer2{display: none;}
+    .footer img {
+        margin: 10px 0;
+    }
+
+}
+
+@media (max-width: 480px) {
     .footer {
         flex-direction: column;
         align-items: center;
